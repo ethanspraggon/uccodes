@@ -1,0 +1,63 @@
+# the below line will make sure that python 3 and 2 works the same
+from __future__ import print_function
+
+# THIS IS A COMMENT everything after # is ignored
+"""
+This is another way to do comment anything between the quotes is ignored
+"""
+""""
+
+automount readyshare spraggnet doesnt work yet
+//192.168.1.1/Spraggnet /media/spraggnet cifs user,guest,sec=ntlm 0 0
+
+"""
+# import your modules that you will use a lot here os and sys are used a lot
+
+import os, sys, random
+
+def Make_Grid(n):
+    grid=[]
+    n=1000
+    for i in range(0,n):
+        arr=[0 for j in range(0,n) ]
+        grid.append(arr)
+    return grid
+
+# this will run if you run it like python game_of_life_template.py
+# but if you want to import this file the lines below this will not run
+if __name__=="__main__":
+    
+    """
+    STEP 1
+    first thing you want to do is to make two square grids  filled with zeros
+    one of the grids will be the current generation
+    the other will be the next generation
+    there are many ways to do this
+    I made a function to do this
+    """
+    n=1000
+    grid1=Make_Grid(n)
+    print(grid1)
+    grid1[0][999]=1000.2
+    print(grid1[0][999])
+
+    grid2=Make_Grid(n)
+
+    """
+    STEP2 
+    randomly fill in grid points 
+    """
+
+    """
+    STEP3 
+    run the game of life over a number of steps
+
+    """
+    life_grids=(grid1,grid2)
+    nsteps=1000
+    for i in range(0,nsteps):
+        pass
+
+    """
+    print out the result
+    """
